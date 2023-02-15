@@ -1,0 +1,38 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory app:title="General"
+        app:iconSpaceReserved="false"
+        >
+        <Preference
+            app:key="contact"
+            app:title="Contact Us"
+            app:useSimpleSummaryProvider="true"
+            app:iconSpaceReserved="false"/>
+        <Preference
+            app:key="reviewCollege"
+            app:title="Review Your College And Earn !"
+            app:useSimpleSummaryProvider="true"
+            app:iconSpaceReserved="false">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://tinyurl.com/shikshausar"
+                />
+        </Preference>
+    </PreferenceCategory>
+    <PreferenceCategory app:title="About"
+        app:iconSpaceReserved="false"
+        >
+        <Preference
+            app:key="about"
+            app:title="Urfine provides a platform for people to access health information,
+connect with others who have similar health conditions, and support
+one another in their health journeys. It can also be • useful tool for health
+professionals to reach and educate large numbers of people. For
+example, they can use social media to share health tips and advice, or
+to provide updates on medical research and advancements."
+            app:useSimpleSummaryProvider="true"
+            app:iconSpaceReserved="false"/>
+
+    </PreferenceCategory>
+</PreferenceScreen>
