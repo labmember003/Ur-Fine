@@ -52,6 +52,10 @@
             android:id="@+id/settingsFragment"
             android:icon="@drawable/ic_baseline_settings_24"
             android:title="Settings" />
+        <item
+            android:id="@+id/ReminderFragment"
+            android:icon="@drawable/ic_baseline_access_time_24"
+            android:title="Reminder" />
 <!--        <item-->
 <!--            android:id="@+id/reviewAndEarn"-->
 <!--            android:icon="@drawable/ic_baseline_attach_money_24"-->

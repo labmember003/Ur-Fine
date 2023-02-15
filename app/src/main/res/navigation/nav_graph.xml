@@ -29,4 +29,9 @@
         android:id="@+id/settingsFragment"
         android:name="com.falcon.urfine.SettingsFragment"
         android:label="Settings" />
+    <fragment
+        android:id="@+id/ReminderFragment"
+        android:name="com.falcon.urfine.SettingsFragment"
+        android:label="Settings" />
+
 </navigation>
