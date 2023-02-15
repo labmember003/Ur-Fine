@@ -5,32 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SecondFragment">
-    <LinearLayout
-        android:layout_marginStart="20dp"
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:paddingTop="15dp"
-        android:paddingBottom="20dp"
-        >
 
-        <ImageView
-            android:id="@+id/back_button_buy"
-            android:layout_width="wrap_content"
-            android:layout_marginTop="5dp"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_baseline_arrow_back_24" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingLeft="10dp"
-            android:textSize="24dp"
-            android:text="Buy Medicines"/>
-
-    </LinearLayout>
     <LinearLayout
         android:id="@+id/seach_bar"
         android:layout_width="match_parent"
@@ -41,7 +16,9 @@
         app:layout_constraintStart_toStartOf="parent">
         <SearchView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
+            android:layout_height="match_parent"
+            android:queryHint="Search Medicine"
+            />
 
     </LinearLayout>
 
@@ -58,7 +35,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="7dp"
-        android:text="Paracetamol"
+        android:text="Paracetamol \n $0.5"
+        android:gravity="center_horizontal"
         app:layout_constraintStart_toStartOf="@id/year1"
         app:layout_constraintEnd_toEndOf="@id/year1"
         app:layout_constraintTop_toBottomOf="@id/year1" />
@@ -85,7 +63,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="7dp"
-        android:text="Flunil - 40"
+        android:gravity="center_horizontal"
+        android:text="Flunil - 40 \n $1"
         app:layout_constraintStart_toStartOf="@id/year2"
         app:layout_constraintEnd_toEndOf="@id/year2"
         app:layout_constraintTop_toBottomOf="@id/year2" />
@@ -114,8 +93,9 @@
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Saw Axe \n Price: $250 \n Location: Phulera"
+        android:text="Clonil - 10mg \n$2"
         android:layout_marginTop="7dp"
+        android:gravity="center_horizontal"
         app:layout_constraintTop_toBottomOf="@id/year3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@id/year3"
@@ -148,10 +128,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="7dp"
-        android:text="Axe \n Price: $250 \n Location: Phulera \n Contact: 8800136151"
+        android:text="TofiCalm \n $5"
         app:layout_constraintTop_toBottomOf="@id/year4"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@id/year4"
+        android:gravity="center_horizontal"
         app:layout_constraintStart_toStartOf="@id/year4" />
     <Button
         android:layout_width="wrap_content"

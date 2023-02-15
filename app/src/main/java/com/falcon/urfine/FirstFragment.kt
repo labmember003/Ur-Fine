@@ -28,8 +28,15 @@ class FirstFragment : Fragment() {
 //        }
 
         _binding = FragmentFirstBinding.inflate(inflater, container, false)
-        binding.year1.setOnClickListener {
-            findNavController().navigate(R.id.action_FirstFragment_to_reminderFragment)
+
+        var currentYear = 0
+        listOf(binding.year1, binding.year2, binding.year3, binding.year4).forEach{
+            currentYear++
+            val bundle = Bundle()
+            bundle.putInt("Year", currentYear)
+            it.setOnClickListener {
+                findNavController().navigate(R.id.action_FirstFragment_to_feedFragment, bundle)
+            }
         }
 
         return binding.root
