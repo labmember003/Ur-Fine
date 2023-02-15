@@ -35,10 +35,8 @@ class MainActivity : AppCompatActivity() {
         NavigationUI.setupActionBarWithNavController(this, navController, binding.drawerLayout)
         NavigationUI.setupWithNavController(binding.navView, navController)
 
-        binding.fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                .setAnchorView(R.id.fab)
-                .setAction("Action", null).show()
+        binding.toolbar2.setOnClickListener {
+            binding.drawerLayout.openDrawer(GravityCompat.START)
         }
         binding.toolbar.setOnClickListener {
             binding.drawerLayout.openDrawer(GravityCompat.START)

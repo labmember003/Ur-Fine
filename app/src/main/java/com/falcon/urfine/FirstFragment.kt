@@ -23,8 +23,15 @@ class FirstFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+//        binding.year1.setOnClickListener {
+////            findNavController().navigate(R.id.action_FirstFragment_to_reminderFragment)
+//        }
 
         _binding = FragmentFirstBinding.inflate(inflater, container, false)
+        binding.year1.setOnClickListener {
+            findNavController().navigate(R.id.action_FirstFragment_to_reminderFragment)
+        }
+
         return binding.root
 
     }
