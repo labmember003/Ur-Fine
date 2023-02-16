@@ -30,7 +30,7 @@ class FirstFragment : Fragment() {
         _binding = FragmentFirstBinding.inflate(inflater, container, false)
 
         var currentYear = 0
-        listOf(binding.year1, binding.year2, binding.year3, binding.year4).forEach{
+        listOf(binding.year1, binding.year2, binding.year3, binding.year4, binding.year5, binding.year6).forEach{
             currentYear++
             val bundle = Bundle()
             bundle.putInt("Year", currentYear)
